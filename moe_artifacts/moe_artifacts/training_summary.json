@@ -1,0 +1,82 @@
+{
+  "total_training_time_sec": 181.0781466960907,
+  "folds": [
+    {
+      "fold": 0,
+      "best_epoch": 25,
+      "best_loss": 0.8874751925468445,
+      "overall_accuracy": 0.732824427480916,
+      "smell_accuracy": {
+        "LongMethod": 0.0,
+        "GodClass": 0.8108108108108109,
+        "FeatureEnvy": 0.6744186046511628,
+        "RefusedBequest": 0.7254901960784313
+      },
+      "checkpoint_path": "/content/moe_artifacts/checkpoints/moe_fold0.pth"
+    },
+    {
+      "fold": 1,
+      "best_epoch": 5,
+      "best_loss": 0.8145186305046082,
+      "overall_accuracy": 0.6717557251908397,
+      "smell_accuracy": {
+        "LongMethod": 0.0,
+        "GodClass": 0.8181818181818182,
+        "FeatureEnvy": 0.4878048780487805,
+        "RefusedBequest": 0.6956521739130435
+      },
+      "checkpoint_path": "/content/moe_artifacts/checkpoints/moe_fold1.pth"
+    },
+    {
+      "fold": 2,
+      "best_epoch": 65,
+      "best_loss": 0.9591608643531799,
+      "overall_accuracy": 0.7480916030534351,
+      "smell_accuracy": {
+        "LongMethod": 0.0,
+        "GodClass": 0.9722222222222222,
+        "FeatureEnvy": 0.5476190476190477,
+        "RefusedBequest": 0.7547169811320755
+      },
+      "checkpoint_path": "/content/moe_artifacts/checkpoints/moe_fold2.pth"
+    },
+    {
+      "fold": 3,
+      "best_epoch": 20,
+      "best_loss": 0.8452924489974976,
+      "overall_accuracy": 0.6793893129770993,
+      "smell_accuracy": {
+        "LongMethod": 0.0,
+        "GodClass": 0.9487179487179487,
+        "FeatureEnvy": 0.5238095238095238,
+        "RefusedBequest": 0.6
+      },
+      "checkpoint_path": "/content/moe_artifacts/checkpoints/moe_fold3.pth"
+    },
+    {
+      "fold": 4,
+      "best_epoch": 45,
+      "best_loss": 0.9722522497177124,
+      "overall_accuracy": 0.7461538461538462,
+      "smell_accuracy": {
+        "LongMethod": 0.0,
+        "GodClass": 0.9,
+        "FeatureEnvy": 0.5952380952380952,
+        "RefusedBequest": 0.75
+      },
+      "checkpoint_path": "/content/moe_artifacts/checkpoints/moe_fold4.pth"
+    }
+  ],
+  "config": {
+    "epochs": 120,
+    "batch_size": 1024,
+    "eval_batch_size": 1024,
+    "eval_interval": 5,
+    "learning_rate": 3e-05,
+    "kfolds": 5,
+    "use_augmentation": false,
+    "augment_factor": 5,
+    "seed": 808,
+    "device": "cuda"
+  }
+}
